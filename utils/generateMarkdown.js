@@ -25,7 +25,7 @@ function generateMarkdown(data) {
   ${data.usage}
   ## Contribution
   ${data.contribution}
-  ## Questions
+  ## Questions 2
   ${data.githubUsername}
   ${data.githubRepo}
   ${data.email}
