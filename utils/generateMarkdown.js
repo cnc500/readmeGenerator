@@ -1,19 +1,14 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// renderLicenseBadge is a function that returns a license badge imported from shield.io 
+// based upon which "license" the user selects 
+
 function renderLicenseBadge(license) {
   return`![badge](https://img.shields.io/badge/license-${license}-green)`
 }
 
+// Every project should have a license, even if it is a very unrestrictive one from
+// my research
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// This function is used to generate a markdown for a professional README
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Table of Contents
@@ -42,5 +37,5 @@ function generateMarkdown(data) {
   ###   Email:  ${data.email}
   `;
 }
-
+// This exports the function generateMarkdown
 module.exports = generateMarkdown;

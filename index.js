@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// These packages are needed for this application including my created generateMarkdown 
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown")
 
-// TODO: Create an array of questions for user input
+// Array of questions for user to input or select
 const questions = [
     {
         type : "input",
@@ -24,7 +24,7 @@ const questions = [
         type : "list",
         name : "license",
         message : "Choose a license for your project",
-        choices : ["MIT","Aladdin","Apache"]
+        choices : ["MIT","Aladdin","Apache2","GPL3","BSD2Clause","BSD3Clause","BSD4Clause"]
     },
     {
         type : "input",
@@ -54,10 +54,7 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {} 
-
-// TODO: Create a function to initialize app
+// This function initializes application
 function init() {
     inquirer.prompt(questions)
     .then(data=>{
@@ -67,5 +64,5 @@ function init() {
     })    
 }
 
-// Function call to initialize app
+// Calls function init to initialize app
 init();
